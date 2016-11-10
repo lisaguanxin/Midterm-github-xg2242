@@ -4,7 +4,6 @@
 <head>
     <title>Midterm Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script language="javascript" src="midterm.js">
     </script>
 
@@ -37,8 +36,9 @@
             <!--This is the introduction of the course with a black background image. But the css doesn't work.
         I guess it can be done either by css or by jumbotron.-->
             <div class="intro">
-                <h1>Have the power to convince </h1>
-                <h1>This course will work you through the most critical parts of a good speech.</h1>
+                <h1>Have the power to convince. </h1>
+                <h1>This course will work you through the simple secrets of a good speech.</h1>
+                <h1>By three simple steps:Warch two videos,compare a stong speech to a weak one, you try it!</h1>
             </div>
 
             <!--This is the section to watch two video clips and recognize the tricks-->
@@ -61,6 +61,10 @@
                         <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">The facial expression.</label><br/>
                         <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">I don't know.</label><br/>
                     </ul>
+                    <div id="results1">
+                        <button style="color:black;position:relative;left:80px;" id="button1" type="Button">Show me the answer!</button>
+                        <p><strong>Question 1:</strong> The correct answer is the <strong>first choice</strong>.</p>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -79,44 +83,43 @@
                         <input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Juxtaposition</label><br/>
                         <input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Analogy</label><br/>
                     </ul>
-                    <div id="results">
-                        <!--try to change the color of the button but can't.-->
-                        <!-- I guess I have to override the body css rules to change text color or background-color-->
-                        <button id="button1" type="Button">Show me the answers!</button>
+
+                    <div id="result2">
+                        <!--try to change the color of the button, and finally succeed by putting internal style.-->
+                        <!-- I guess I have to override the bootstrap css rules to change it-->
+                        <button style="color:black;position:relative;left:80px;" type="Button"> Show me the answer!</button>
                     </div>
-                    <div id="category1">
-                        <p><strong>Question 1:</strong> The correct answer is the <strong>Answer 1</strong>.</p>
-                    </div>
+                    <p><strong>Question 2:</strong>The correct answer is the <strong>second choice </strong>.</p>
                 </div>
             </div>
 
             <!--This is the session to compare two speeches and choose the more convincing one.-->
             <h3>Now compare the two speeches, choose the one you would like vote for.</h3>
 
-                <div class="row">
-                    <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-6">
                     <div class="text1">
                         <p>I want to be the president because I think that I can do a really good job. I'm a strong leader and I love America and would love to contribute. I listen to people and help them when they are in trouble, and I will be listening
                             to you all if you elect me. I think you should pick me because I can be the best president candidate our country has ever had!
                         </p>
-                        <button id="leftButton">YES I VOTE</button>
-                      </div>
+                        <button style="color:black;position:relative;left:200px;">YES I VOTE</button>
                     </div>
-                    <div class="col-sm-6">
-                      <div class="text2">
+                </div>
+                <div class="col-sm-6">
+                    <div class="text2">
                         <p>I would like to be your president because you have told me that you want a united, safe, great country. You want to have equal education, improve average salary, and to have the best medical service. I want to make that a reality.
                             If you elect me, I will work with our cabinet to realize medical care for all. And, I promise, I will propose a bill that call for an end to the Iraq war.
                         </p>
-                        <button id="rightButton">YES I VOTE</button>
-                      </div>
+                        <button style="color:black;position:relative;left:200px;">YES I VOTE</button>
                     </div>
+                </div>
 
             </div>
 
             <!--This is the final part of this course to practice writing a short speech -->
-            <h3>Try it out! Write a short speech of your own, and submit it to the display area. If it is liked by over 3 people, you will be officially completed in this course!
+            <h3>Try it out! Write a short speech of your own, and submit it to the display area.
     </h3>
-            <input type="text" id="myText" value="Some text...">
+            <input type="text" id="myText" value="Input here">
             <p>Click the "Submit" button to display your work in the display page.</p>
             <button onclick="Submit()">Submit</button>
             <p id="Submitted"></p>

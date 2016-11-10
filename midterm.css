@@ -1,4 +1,3 @@
-                                        font-family: 'Open Sans', sans-serif;
                                 .imageWrap. {
                                     position: relative;
                                     height: 200px;
@@ -59,11 +58,7 @@
                                             position: relative;
                                         }
                                         #button1 {
-                                            padding-left: 60px;
-                                        }
-                                        #leftButton {
-                                            padding-left: 60px;
-                                        }
-                                        #rightButton {
-                                            padding-left: 60px;
+                                          position:relative;
+                                            left:50px;
+                                            bottom:50%;
                                         }
